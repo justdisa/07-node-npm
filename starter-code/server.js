@@ -13,11 +13,18 @@ app.use(express.static('./public'));
 
 
 app.get('*', function(request, response) {
-  // TODO: Using the response object, send the index.html file back to the user
+  // DONE: Using the response object, send the index.html file back to the user
+  console.log('index.html to user');
+  response.sendFile('./public/index.html', {root: '.'});
 });
 
-// TODO: (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
+// DONE: (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
+app.get('/new.html', function(request, response) {
+  console.log('new.html sent to user');
+  response.sendFile('./public/new.html');
+})
 
 app.listen(PORT, function() {
-  // TODO: Log to the console a message that lets you know which port your server has started on
+  // DONE: Log to the console a message that lets you know which port your server has started on
+  console.log('Our amazing app is being served localhost 3000!');
 });
