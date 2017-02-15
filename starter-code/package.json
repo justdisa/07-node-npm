@@ -1,0 +1,28 @@
+{
+  "name": "07-node-npm",
+  "version": "1.0.0",
+  "description": "''\u001b[D\u001b[C\u001b[D\u001blab node \u001b[1;5D \u001b[D\u001b[Cjs npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justdisa/07-node-npm.git"
+  },
+  "keywords": [
+    "lab",
+    "node",
+    "js",
+    "npm"
+  ],
+  "author": "disa-eve",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justdisa/07-node-npm/issues"
+  },
+  "homepage": "https://github.com/justdisa/07-node-npm#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
